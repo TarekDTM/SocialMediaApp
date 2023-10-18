@@ -4,7 +4,7 @@ import {registerUser} from './registerAction';
 import {loginUser} from './loginAction';
 
 // Define a type for the slice state
-export interface userState {
+export interface UserState {
   loading: boolean;
   userInfo: any | null;
   userToken: string | null;
@@ -12,7 +12,7 @@ export interface userState {
   success: boolean;
 }
 
-const initialState: userState = {
+const initialState: UserState = {
   loading: false,
   userInfo: null,
   userToken: null,
